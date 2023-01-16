@@ -15,7 +15,6 @@ when the tracking is over, we start to detect objects again. We store all the de
 We also save the frames with detection event in folder and a text file that contain all the detections events.
 
 The application display one window divided to six screens:
-
   1.	Main Frame that we read from camera.
   2.	Information Frame that includes detection events and application information.
   3.	Tracking Frame with the object's coordinates, score, prediction time and FPS.
