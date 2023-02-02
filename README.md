@@ -2,9 +2,16 @@
 
 In this project we implements **Movements Detection**, **Object Detection** and **Object Tracking** algorithm. 
 We do it by recognize movement in the frame, detect the object and tracking after it in real time from camera. 
-We use **Resnet50** model with **Transfer Learning** technique on **CIFAR10** Dataset that we trained and performs 85% accuracy.
+We use **Resnet50** model with **Transfer Learning** technique on **CIFAR10** Dataset that we trained and performs **95% accuracy.**
 
-The app running between two states: Detection and Tracking. 
+The first part of the project is about **Deep Learning** and focus in **Convolutional Neural Network** and related subjects like **Overfitting, 
+Transfer Learning** including **Features Extractor** and **Fine Tuning** and **Import Dataset From Binary Files.**
+The second part of the project is about **Computer Vision** using libraries like **OpenCV, Numpy, h5py** etc'.
+
+In the begining of the project we test different type of models, with different types of techniques, to find the model that fit most to our goal, recognize birds.
+We found that the model with the best result is **ResNet50** with **Transfer Learning** using **Fine Tuning**, wich bring us result of **95% accuracy** on **CIFAR-10** dataset.
+
+After that we build the second part of the object, the front. The app running between two states: **Detection** and **Tracking.** 
 With this algorithm, instead of using Resnet50 prediction for every frame, we detect the object only once in the beginning and then tracking after it. 
 For example, if we are reading 2000 frames it can be the different between running the model 2000 times or only once. 
 We also starting to detect object only when we recognize a movement in the frame, it help the app not running in cases of quiet frames.
@@ -26,7 +33,7 @@ The application using **TensorFlow** with **Keras** by **Python**.
 
 Let's see a short video of our application:
 
-https://user-images.githubusercontent.com/107938584/212727712-093b560b-67cc-4f96-9371-185b8c90d35c.mp4
+https://user-images.githubusercontent.com/107938584/216432415-8aa255fd-64df-4d25-85c2-12b70182fcbc.mp4
 
 
 Example of folder with the saved frames from detection event:
