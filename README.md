@@ -35,6 +35,8 @@ Let's see a short video of our application:
 
 https://user-images.githubusercontent.com/107938584/216759160-847d400a-8bce-4f26-8c0c-52d47773ceb4.mp4
 
+https://user-images.githubusercontent.com/107938584/216759239-96024b30-7414-4694-9112-461a2aabc4a5.mp4
+
 
 
 Example of folder with the saved frames from detection event:
