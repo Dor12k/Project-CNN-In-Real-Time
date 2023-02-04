@@ -32,8 +32,8 @@ The application display one window divided to six screens:
 The application using **TensorFlow** with **Keras** by **Python**.
 
 Let's see a short video of our application:
+https://user-images.githubusercontent.com/107938584/216759160-847d400a-8bce-4f26-8c0c-52d47773ceb4.mp4
 
-https://user-images.githubusercontent.com/107938584/216759078-54a7f897-0dc1-44e0-b357-d16f4df32a51.mp4
 
 
 Example of folder with the saved frames from detection event:
