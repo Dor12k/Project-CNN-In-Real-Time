@@ -33,7 +33,8 @@ The application using **TensorFlow** with **Keras** by **Python**.
 
 Let's see a short video of our application:
 
-https://user-images.githubusercontent.com/107938584/233852200-e1b889d7-e47b-434f-b523-2638a7ce67bb.mp4
+https://user-images.githubusercontent.com/107938584/235354576-a6622ecd-53b8-4fc5-bdc5-f8451e8e0203.mp4
+
 
 Example of folder with the saved frames from detection event:
  
