@@ -1,35 +1,25 @@
 # **Project: CNN In Real Time** 
 
-In this project we implements **Movements Detection**, **Object Detection** and **Object Tracking** algorithm. 
-We do it by recognize movement in the frame, detect the object and tracking after it in real time from camera. 
-We use **Resnet50** model with **Transfer Learning** technique on **CIFAR10** Dataset that we trained and performs **95% accuracy.**
+In this project, we implement algorithms for **Movements Detection**, **Object Detection** and **Object Tracking**. Our approach involves recognizing movement within the frame, detecting objects, and tracking them in real-time via the camera. We utilize the **ResNet50** model, applying **Transfer Learning** techniques on the **CIFAR-10** dataset, achieving an impressive **accuracy of 95%**.
 
-The first part of the project is about **Deep Learning** and focus in **Convolutional Neural Network** and related subjects like **Overfitting, 
-Transfer Learning** including **Features Extractor** and **Fine Tuning** and **Import Dataset From Binary Files.**
-The second part of the project is about **Computer Vision** using libraries like **OpenCV, Numpy, h5py** etc'.
+**Project Overview:** The initial phase of the project focuses on Deep Learning, emphasizing Convolutional Neural Networks and related concepts such as Overfitting, Transfer Learning (including Feature Extraction and Fine Tuning), and importing datasets from binary files. The second phase addresses Computer Vision, employing libraries like **OpenCV** and **NumPy**.
 
-In the begining of the project we test different type of models, with different types of techniques, to find the model that fit most to our goal, recognize birds.
-We found that the model with the best result is **ResNet50** with **Transfer Learning** using **Fine Tuning**, wich bring us result of **95% accuracy** on **CIFAR-10** dataset.
+At the outset, we experimented with various models and techniques to identify the best fit for our goal: recognizing birds. Our findings revealed that the ResNet50 model, combined with Transfer Learning and Fine Tuning, yielded the highest accuracy of 95% on the CIFAR-10 dataset.
 
-After that we build the second part of the object, the front. The app running between two states: **Detection** and **Tracking.** 
-With this algorithm, instead of using Resnet50 prediction for every frame, we detect the object only once in the beginning and then tracking after it. 
-For example, if we are reading 2000 frames it can be the different between running the model 2000 times or only once. 
-We also starting to detect object only when we recognize a movement in the frame, it help the app not running in cases of quiet frames.
+**Application Architecture:** Next, we developed the application’s front end, which operates between two states: Detection and Tracking. Instead of utilizing the ResNet50 model's predictionsor every frame, we only detect the object once initially, then track it continuously. For instance, processing 2000 frames can differ significantly between executing the model 2000 times versus just once. We also initiate object detection only when movement is detected in the frame, which optimizes performance during static frames.
 
-First, we recognize a movement in the frame, then we cut the suspect part in the frame and send it to the model for prediction. 
-We detect the object by using our model prediction and then we start tracking after it. 
-when the tracking is over, we start to detect objects again. We store all the detections events in format of date and time and show it on the screen.
-We also save the frames with detection event in folder and a text file that contain all the detections events.
+The process begins with recognizing movement in the frame, after which we isolate the suspicious section and send it to the model for prediction. We use the model’s predictions to identify the object and commence tracking. Once tracking concludes, the application resumes object detection. We log all detection events, recording them with timestamps, and display this information on-screen. Additionally, frames containing detection events are saved in a designated folder, along with a text file detailing all detection occurrences.
 
-The application display one window divided to six screens:
-  1.	Main Frame that we read from camera.
-  2.	Information Frame that includes detection events and application information.
-  3.	Tracking Frame with the object's coordinates, score, prediction time and FPS.
-  4.	Object Frame, shows the cutted fragment we sent for prediction.
-  5.	Scores Frame that shows us the scores for every label.
-  6.	Mask Frame, show us the mask we use on the main frame.
-  
-The application using **TensorFlow** with **Keras** by **Python**.
+**User Interface:** The application features a window divided into six screens:
+
+   1. Main Frame: Displays the live feed from the camera.
+   2. Information Frame: Contains detection event summaries and application details.
+   3. Tracking Frame: Shows the object’s coordinates, confidence score, prediction time, and frames per second (FPS).
+   4. Object Frame: Displays the cropped section sent for prediction.
+   5. Scores Frame: Lists the scores for each label.
+   6. Mask Frame: Shows the mask applied to the main frame.
+
+The application utilizes **TensorFlow** with **Keras** in **Python**.
 
 Let's see a short video of our application:
 
